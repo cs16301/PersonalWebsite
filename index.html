@@ -5,10 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cliff</title>
     <style>
-
+        .top-bar {
+            background-color: whitesmoke;
+            width: 100%;
+            overflow: hidden;
+        }
+        .top-bar-item {
+            float: left;
+            margin: auto;
+        }
+        .top-bar-item a {
+            display: inline-block;
+            padding: 30px;
+        }
     </style>
 </head>
 <body>
-    
+    <header class="top-bar">
+        <ul style="list-style: none;">
+            <li  class="top-bar-item">
+                <h1>
+                    A brief website about [REDACTED]
+                </h1>
+            </li>
+            <li class="top-bar-item">
+                <a href="#bio">
+                    Bio
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div>
+        <h1 style="display: inline;" id="bio">
+            Bio
+        </h1>
+        <hr>
+        <img src="images/redactedImage.PNG" alt="me" width="300">
+        
+    </div>
 </body>
 </html>
