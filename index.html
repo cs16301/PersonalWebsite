@@ -9,6 +9,9 @@
             background-color: whitesmoke;
             width: 100%;
             overflow: hidden;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
         }
         .top-bar-item {
             float: left;
@@ -17,6 +20,20 @@
         .top-bar-item a {
             display: inline-block;
             padding: 30px;
+        }
+        .bio {
+            overflow: hidden;
+        }
+        .bio h4 {
+            display: inline-block;
+            margin: 10px;
+        }
+        .horizontal-bar {
+            overflow: hidden;
+        }
+        .horizontal-bar div {
+            display: inline-block;
+            margin: 20px;
         }
     </style>
 </head>
@@ -33,6 +50,16 @@
                     Bio
                 </a>
             </li>
+            <li class="top-bar-item">
+                <a href="#hobbies">
+                    Hobbies
+                </a>
+            </li>
+            <li class="top-bar-item">
+                <a href="#brands">
+                    Favorite Brands
+                </a>
+            </li>
         </ul>
     </header>
     <div>
@@ -41,7 +68,74 @@
         </h1>
         <hr>
         <img src="images/redactedImage.PNG" alt="me" width="300">
-        
+        <div class="bio">
+            <h4>
+                Name: <br>
+                [REDACTED]
+            </h4>
+            <h4>
+                Age: <br>
+                17
+            </h4>
+            <h4>
+                Desired Profession: <br>
+                Architect
+            </h4>
+        </div>
+    </div>
+    <div>
+        <h1 id="hobbies">
+            My Hobbies
+        </h1>
+        <hr>
+        <div class="horizontal-bar">
+            <div>
+                <h2>
+                    Drafting
+                </h2>
+                <img src="images/drafting.jpg" alt="drafting" width="400">
+                <p>
+                    Drafting, the art of designing things to engineering standards, is <br>
+                    one of my favorite pastimes.
+                </p>
+            </div>
+            <div>
+                <h2>
+                    Accounting
+                </h2>
+                <img src="images/accountingRecords.jfif" alt="accounting records" width="400">
+                <p>
+                    A bit of a weird one I'll admit, but I find it oddly fun to make and <br>
+                    keep records of finances and assets.
+                </p>
+            </div>
+            <div>
+                <h2>
+                    Super Smash Bros.
+                </h2>
+                <img src="images/smashBros.jfif" alt="Super Smash Bros. Ultimate" width="285">
+                <p>
+                    I'm not all boring, I also play video games, Super Smash Bros. is one <br>
+                    of my favorites, and is also the only game I play competitively
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 id="brands">
+            My Favorite Brands
+        </h1>
+        <hr>
+        <div class="horizontal-bar">
+            <div>
+                <img src="images/kirkland.png" alt="Kirkland Signature" width="350">
+                <p>
+                    Kirkland Signature is Costco's "store brand" and, as such, is an extension <br>
+                    of Costco's philosophy "More is More." Kirkland will sell you huge quantities <br>
+                    of nigh anything at a price that is lower than at any other store.
+                </p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
